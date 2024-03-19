@@ -23,14 +23,7 @@ router.post('/productsData', async (req, res) => {
 router.post('/filterSearchData', async (req, res) => {
     try {
 
-        const { search } = req.body;
-
-        if(!search)
-        {
-            return res.status(400).json({success: false, error: "O campo de procura está vazio!"});
-        }
-
-        const searchItem = removeAccents(search.toLowerCase());
+        const searchItem = removeAccents(req.body.search.toLowerCase());
         function removeAccentsFromProducts(value) {
             if (value.name) {
                 return removeAccents(value.name.toLowerCase())

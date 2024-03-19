@@ -18,7 +18,7 @@ const getCollection = require("./mongo_connection");
 database();
 
 const corsOptions = {
-    origin: ['http://localhost:3000', "https://sports-ecommerce-app.onrender.com", ]
+    origin: ['http://localhost:3000', "https://sports-ecommerce-app.onrender.com", "https://sports-ecommerce-mern-app-frontend.vercel.app" ]
 };
 
 app.use(cors(corsOptions));

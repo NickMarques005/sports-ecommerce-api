@@ -24,8 +24,24 @@ const userSchema = new Schema({
     },
     date:{
         type: Date,
-        default: Date.now
+        default: Date.now()
     }
 });
+
+userSchema.pre('save', async (next) => {
+    if(this.isModified('password')) {
+        const salt = await bcrypt.genSalt(15);
+        const hashedToken = await bcrypt.hash(this.password, salt);
+
+        this.password = hashedToken;
+    }
+
+    next();
+});
+
+userSchema.methods.comparePassword = async (token) => {
+    const result = await bcrypt.compareSync(token, this.password);
+    return result;
+}
 
 module.exports = mongoose.model('user', userSchema, 'forms_data');

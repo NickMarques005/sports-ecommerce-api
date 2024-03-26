@@ -18,7 +18,7 @@ const getCollection = require("./server/mongo_connection");
 database();
 
 const corsOptions = {
-    origin: ['http://localhost:3000', "https://sports-ecommerce-app.onrender.com", "https://sports-ecommerce-mern-app-frontend.vercel.app" ]
+    origin: ['http://localhost:3001', "https://sports-ecommerce-app.onrender.com", "https://sports-ecommerce-mern-app-frontend.vercel.app", ]
 };
 
 app.use(cors(corsOptions));
@@ -29,8 +29,6 @@ app.get('/', (req, res) => {
 });
 
 app.use(express.json());
-
-//app.use('/api/userdata', require('./routes/authData'));
 
 app.use('/api/', require("./server/routes/createUser"));
 
@@ -53,7 +51,7 @@ app.post('/api/updateAllProducts', async (req, res) => {
 
 //App listening Function
 app.listen(port, () => {
-    console.log(`App Server listening on port ${port}`); //Prints on the console that the app server is listening on the desired port
+    console.log(`App Server listening on port ${port}`); 
 });
 
 

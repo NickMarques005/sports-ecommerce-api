@@ -12,8 +12,8 @@ app.use(cors());
 //Port Number for the server
 const port = process.env.PORT || 3000;
 //Requiring Database Functionalitys
-const database = require("./server/database");
-const getCollection = require("./server/mongo_connection");
+const database = require("./src/database/database");
+const getCollection = require("./src/database/mongo_connection");
 //Importing Database to index.js
 database();
 
@@ -29,12 +29,6 @@ app.get('/', (req, res) => {
 });
 
 app.use(express.json());
-
-app.use('/api/', require("./server/routes/createUser"));
-
-app.use('/api/', require("./server/routes/displayData"));
-
-app.use('/api/', require("./server/routes/authData"));
 
 app.post('/api/updateAllProducts', async (req, res) => {
     try {

@@ -1,10 +1,9 @@
 //---user.js---//
 
 const mongoose = require('mongoose');
-
+const bcrypt = require('bcryptjs');
 const { Schema } = mongoose;
 
-//Schema User for Registration:
 const userSchema = new Schema({
     name:{
         type: String,
@@ -16,32 +15,34 @@ const userSchema = new Schema({
     },
     email:{
         type:String,
-        required: true
+        required: true,
+        unique: true
     },
     password:{
         type:String,
         required: true
     },
-    date:{
+    dateCreation:{
         type: Date,
         default: Date.now()
     }
 });
 
-userSchema.pre('save', async (next) => {
-    if(this.isModified('password')) {
-        const salt = await bcrypt.genSalt(15);
-        const hashedToken = await bcrypt.hash(this.password, salt);
+userSchema.pre('save', async function (next) {
+    if(!this.isModified('password')) return next();
 
-        this.password = hashedToken;
-    }
+    const salt = await bcrypt.genSalt(15);
+    this.password = await bcrypt.hash(this.password, salt);
 
     next();
 });
 
-userSchema.methods.comparePassword = async (token) => {
+userSchema.methods.comparePassword = async function(token) {
     const result = await bcrypt.compareSync(token, this.password);
     return result;
 }
 
-module.exports = mongoose.model('user', userSchema, 'forms_data');
+
+const User = mongoose.model('user', userSchema, 'forms_data');
+
+module.exports = User;

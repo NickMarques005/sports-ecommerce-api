@@ -14,6 +14,7 @@ const port = process.env.PORT || 3000;
 //Requiring Database Functionalitys
 const database = require("./src/database/database");
 const getCollection = require("./src/database/mongo_connection");
+const MainRouter = require('./src/routes/main_router');
 //Importing Database to index.js
 database();
 
@@ -30,18 +31,7 @@ app.get('/', (req, res) => {
 
 app.use(express.json());
 
-app.post('/api/updateAllProducts', async (req, res) => {
-    try {
-        const collection = await getCollection(); 
-
-        const updateResult = await collection.updateMany({}, { $set: { subcategory: "" } });
-
-        res.json({ message: `${updateResult.modifiedCount} updated documents` });
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ error: 'Error updating documents..' });
-    }
-});
+app.use('/api', MainRouter);
 
 //App listening Function
 app.listen(port, () => {

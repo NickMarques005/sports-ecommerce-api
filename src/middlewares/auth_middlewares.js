@@ -3,7 +3,7 @@ const { HandleError } = require('../utils/handle_response');
 
 const validateCreateUser = [
     body('email', 'Email incorreto').isEmail(),
-    body('name', "Nome inválido").isLength({min: 3, max: 20}),
+    body('username', "Nome inválido").isLength({min: 3, max: 20}),
     body('password', "Senha inválida").isLength({min: 8}),
     body('cep_location', "CEP não fornecido").not().isEmpty(),
     (req, res, next) => {
@@ -27,8 +27,8 @@ const validateLoginUser = [
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
             const extractedErrors = errors.array().map(err => err.msg);
-            const messageError = extractedErrors.join(" | ");
-            return HandleError(" | ");
+            const errorMessage = extractedErrors.join(" | ");
+            return HandleError(res, 400, errorMessage);
         }
         next();
     }

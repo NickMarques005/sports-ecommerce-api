@@ -1,6 +1,7 @@
 [
     {
         "category": "calcados",
+        "subcategory": "running",
         "name": "Tênis adidas Response Runner U - Unissex",
         "rating": {
             "rating_stars": 4.2,
@@ -15,9 +16,10 @@
                     "tenis-pretobranco-adidas-response-runner-u-unissex-img2.avif",
                     "tenis-pretobranco-adidas-response-runner-u-unissex-img3.avif"
                 ],
-                "descount": 26,
+                "discount": 26,
                 "condition_price": 4,
                 "color": "preto/branco",
+                "new": false,
                 "sizes": [
                     {
                         "size": 34,
@@ -59,9 +61,10 @@
                     "tenis-pretovinho-adidas-response-runner-u-unissex-img2.avif",
                     "tenis-pretovinho-adidas-response-runner-u-unissex-img3.avif"
                 ],
-                "descount": 30,
+                "discount": 30,
                 "condition_price": 3,
                 "color": "preto/vinho",
+                "new": true,
                 "sizes": [
                     {
                         "size": 34,
@@ -117,6 +120,7 @@
     },
     {
         "category": "calçados",
+        "subcategory": "style",
         "name": "Tênis Nike Downshifter 12 - Masculino",
         "rating": {
             "stars": 3.8,
@@ -124,16 +128,17 @@
         },
         "description": "A sua rotina esportiva pede conforto e versatilidade? Esse tênis Nike Downshifter 12 é a escolha ideal para iniciar na corrida ou caminhada. O cabedal (parte superior do calçado) em tramas abertas, que garantem mais elasticidade e suporte aos pés. Já a entressola em EVA e solado em borracha, auxilia no amortecimento do impacto das passadas e segurança. Não perca a oportunidade e adquira já seu tênis Nike!",
         "initial_price": 449.99,
-        "variants": [
+        "types": [
             {
-                "images": [
+                "imgs": [
                     "tenis-pretobranco-nike-downshifter-12-masculino-img1.avif",
                     "tenis-pretobranco-nike-downshifter-12-masculino-img2.avif",
                     "tenis-pretobranco-nike-downshifter-12-masculino-img3.avif"
                 ],
                 "discount": 32,
-                "final_price": 305.99,
+                "condition_price": 2,
                 "color": "preto/branco",
+                "new": true,
                 "sizes": [
                     {
                         "size": 40,
@@ -164,8 +169,9 @@
                     "tenis-cinzabranco-nike-downshifter-12-masculino-img3.avif"
                 ],
                 "discount": 33,
-                "final_price": 301.49,
+                "condition_price": 2,
                 "color": "cinza/branco",
+                "new": false,
                 "sizes": [
                     {
                         "size": 42,
@@ -187,9 +193,10 @@
                     "tenis-pretoroxo-nike-downshifter-12-masculino-img2.avif",
                     "tenis-pretoroxo-nike-downshifter-12-masculino-img3.avif"
                 ],
-                "discount": 33,
-                "final_price": 301.49,
+                "discount": 15,
+                "condition_price": 3,
                 "color": "preto/roxo",
+                "new": true,
                 "sizes": [
                     {
                         "size": 39,
@@ -222,22 +229,24 @@
     {
         "category": "calcados",
         "name": "Tênis Reserva RSV367 New - Masculino",
+        "subcategory": "style",
         "rating": {
             "rating_stars": 4.0,
             "rating_amount": 57
         },
         "description": "Conheça o Tênis Reserva RSV367 New - Masculino!\n\nPrático e versátil para complementar o look casual no contexto urbano, o Tênis Reserva RSV367 New possui estrutura em material sintético com entressola plana e reforçada por tira emborrachada em toda a extensão. Sua palmilha é em EVA forrado e removível para facilitar a troca e limpeza com solado emborrachado para contribuir na aderência e uma movimentação mais firme. Uma ótima opção para quem busca estilo e modernidade em qualquer ocasião. Compre o seu!",
         "initial_price": 299.99,
-        "type": [
+        "types": [
             {
                 "imgs": [
                     "tenis-preto-reserva-rsv367-new-masculino-img1.webp",
                     "tenis-preto-reserva-rsv367-new-masculino-img2.webp",
                     "tenis-preto-reserva-rsv367-new-masculino-img3.webp"
                 ],
-                "descount": 30,
+                "discount": 30,
                 "condition_price": 2,
                 "color": "preto",
+                "new": true,
                 "sizes": [
                     {
                         "size": 40,
@@ -263,9 +272,10 @@
                     "tenis-marrom-reserva-rsv367-new-masculino-img2.webp",
                     "tenis-marrom-reserva-rsv367-new-masculino-img3.webp"
                 ],
-                "descount": 23,
+                "discount": 23,
                 "condition_price": 3,
                 "color": "marrom",
+                "new": false,
                 "sizes": [
                     {
                         "size": 41,
@@ -286,13 +296,14 @@
     {
         "category": "calçados",
         "name": "Chuteira de Campo Deportivo II adidas - Adulto",
+        "subcategory": "soccer",
         "rating": {
             "stars": 4.5,
             "amount": 80
         },
         "description": "Eleve seu padrão de jogo com a qualidade de uma Deportivo II adidas. Seu design é muito confortável com cabedal em sintético durável e reforço acolchoado no colarinho que ajuda a diminuir o desconforto do atrito de contato. O solado em TPU é indicado para os gramados com travas altas e fixas em PU que oferecem maior tração nas arrancadas. A aliada certa para dominar os quatro cantos dos gramados com o desempenho que você espera. Confira você mesmo, compre já!",
         "initial_price": 299.99,
-        "variants": [
+        "types": [
             {
                 "imgs": [
                     "chuteira-brancoazul-de-campo-deportivo-ii-adidas-adulto-img1.avif",
@@ -300,8 +311,9 @@
                     "chuteira-brancoazul-de-campo-deportivo-ii-adidas-adulto-img3.avif"
                 ],
                 "discount": 35,
-                "final_price": 194.99,
+                "condition_price": 2,
                 "color": "branco/azul",
+                "new": false,
                 "sizes": [
                     {
                         "size": 37,
@@ -342,17 +354,18 @@
     {
         "category": "calçados",
         "name": "Chuteira Futsal Umbro Indoor Class 2.2 - Júnior",
+        "subcategory": "soccer",
         "rating": {
             "stars": 4.9,
             "amount": 3
         },
         "description": "Inspire-se nos melhores jogadores e aprimore seu desempenho com mais conforto e estilo. O Cabedal (Parte Superior do calçado) em material resistente, proporcionando suporte e apoio dentro das quatro linhas. A Chuteira apresenta forro interno em têxtil com reforço acolchoado para maior proteção. Além disso, o solado emborrachado oferece maior aderência e excelente tração nas quatro linhas. Venha conferir todos o benefícios da Chuteira Umbro aqui na Sports!",
         "initial_price": 149.99,
-        "variants": [
+        "types": [
             {
                 "color": "preto/branco",
+                "new": false,
                 "discount": 13,
-                "final_price": 130.49,
                 "imgs": [
                     "chuteira-pretobranco-futsal-umbro-indoor-class-2-2-junior-img1.webp",
                     "chuteira-pretobranco-futsal-umbro-indoor-class-2-2-junior-img2.webp",
@@ -415,8 +428,8 @@
             },
             {
                 "color": "azul claro/preto",
+                "new": true,
                 "discount": 25,
-                "final_price": 112.49,
                 "imgs": [
                     "chuteira-azulpreto-futsal-umbro-indoor-class-2-2-junior-img1.avif",
                     "chuteira-azulpreto-futsal-umbro-indoor-class-2-2-junior-img2.avif",
@@ -470,17 +483,18 @@
     {
         "category": "calçados",
         "name": "Bota Adventure Skechers Ralcon Lorken Masculina",
+        "subcategory": "style",
         "rating": {
             "stars": 3.5,
             "amount": 10
         },
         "description": "A bota Skechers Ralcon Lorken é perfeita para quem busca um calçado durável e estiloso. Seu cabedal é feito em couro com recortes em tecido, proporcionando maior resistência e conforto aos pés. A entressola em EVA ajuda a absorver o impacto das pisadas, enquanto o solado de borracha oferece aderência em diversos tipos de terreno. O fechamento em cadarço permite um ajuste personalizado e firme. Além disso, as palmilhas removíveis com tecnologia Memory Foam se moldam ao formato dos pés, garantindo ainda mais conforto e amortecimento durante o uso. O design moderno é excelente para o uso casual ou aventureiro, complementando seu estilo para todos os momentos.",
         "initial_price": 579.90,
-        "variants": [
+        "types": [
             {
                 "color": "preto",
+                "new": false,
                 "discount": 10,
-                "final_price": 521.91,
                 "imgs": [
                     "bota-preto-adventure-skechers-ralcon-lorken-masculina-img1.avif",
                     "bota-preto-adventure-skechers-ralcon-lorken-masculina-img2.avif",
@@ -522,126 +536,155 @@
     {
         "category": "roupas",
         "name": "Camiseta de Basquete do Flamengo 2 adidas - Masculina",
+        "subcategory": "basketball",
         "rating": {
             "rating_stars": 4.9,
             "rating_amount": 62
         },
         "description": "A camiseta ideal para todos os momentos, aquela que garante conforto e segurança para se mover livremente e que é a combinação perfeita entre desempenho e conforto.",
         "initial_price": 279.99,
-        "discounted_price": 170.79,
-        "imgs": [
-            "camiseta-de-basquete-do-flamengo-2-adidas-masculina-img1.avif",
-            "camiseta-de-basquete-do-flamengo-2-adidas-masculina-img2.avif"
-        ],
-        "color": "branco",
-        "sizes": [
+        "types": [
             {
-                "size": "P",
-                "quantity": 25
+                "imgs": [
+                    "camiseta-de-basquete-do-flamengo-2-adidas-masculina-img1.avif",
+                    "camiseta-de-basquete-do-flamengo-2-adidas-masculina-img2.avif"
+                ],
+                "color": "branco",
+                "new": false,
+                "sizes": [
+                    {
+                        "size": "P",
+                        "quantity": 25
+                    }
+                ]
             }
         ]
     },
     {
         "category": "roupas",
         "name": "Shorts Nike Dri-FIT Rival - Masculino",
+        "subcategory": "performance",
         "rating": {
             "rating_stars": 3.7,
             "rating_amount": 6
         },
         "description": "Os shorts Nike Dri-FIT Rival são peças essenciais para o seu jogo: leves, ventilados e antissuor. Eles têm um caimento solto na estrutura e um ajuste seguro na cintura. O tecido de tela em malha dupla proporciona uma sensação macia, leve e ventilada. A tecnologia Dri-FIT ajuda a manter seu corpo seco e confortável.",
         "initial_price": 229.99,
-        "discounted_price": 131.09,
-        "imgs": [
-            "shorts-nike-dri-fit-rival-masculino-img1.avif",
-            "shorts-nike-dri-fit-rival-masculino-img2.avif",
-            "shorts-nike-dri-fit-rival-masculino-img3.avif"
-        ],
-        "color": "preto",
-        "sizes": [
+        "types": [
             {
-                "size": "P",
-                "quantity": 40
-            },
-            {
-                "size": "M",
-                "quantity": 15
-            },
-            {
-                "size": "G",
-                "quantity": 20
+                "imgs": [
+                    "shorts-nike-dri-fit-rival-masculino-img1.avif",
+                    "shorts-nike-dri-fit-rival-masculino-img2.avif",
+                    "shorts-nike-dri-fit-rival-masculino-img3.avif"
+                ],
+                "color": "preto",
+                "new": false,
+                "discount": 30,
+                "sizes": [
+                    {
+                        "size": "P",
+                        "quantity": 40
+                    },
+                    {
+                        "size": "M",
+                        "quantity": 15
+                    },
+                    {
+                        "size": "G",
+                        "quantity": 20
+                    }
+                ]
             }
         ]
     },
     {
         "category": "roupas",
         "name": "Boné Nike Jordan Jumpan Heritage86 - Strapback - Adulto",
+        "subcategory": "style",
         "rating": {
             "rating_stars": 4.0,
             "rating_amount": 1
         },
         "description": "O boné Jordan Jumpman Heritage86 tem uma coroa não estruturada fabricada com sarja leve que é lavada para oferecer um look desgastado. Ele se ajusta na parte traseira com uma alça. Benefícios: A coroa não estruturada de seis painéis é feita com sarja leve. Alça na parte de trás com fivela para ajustar o caimento. Detalhes do produto: Linha de costura interna estampadaIlhós bordados. Botão superior. Design Jumpman bordadoEstrutura: 60-63% algodão e 37-40% nylon. Forro da parte da frente: 100% algodão. As porcentagens dos materiais podem variar. Verifique a etiqueta quanto ao conteúdo real.",
         "initial_price": 199.99,
-        "discounted_price": 119.99,
-        "imgs": [
-            "bone-nike-jordan-jumpan-heritage86-strapback-adulto-img1.avif",
-            "bone-nike-jordan-jumpan-heritage86-strapback-adulto-img2.avif"
-        ],
-        "color": "vermelho",
-        "sizes": [
+        "types": [
             {
-                "size": "ÚNICO",
-                "quantity": 30
+                "imgs": [
+                    "bone-nike-jordan-jumpan-heritage86-strapback-adulto-img1.avif",
+                    "bone-nike-jordan-jumpan-heritage86-strapback-adulto-img2.avif"
+                ],
+                "color": "vermelho",
+                "new": false,
+                "sizes": [
+                    {
+                        "size": "ÚNICO",
+                        "quantity": 30
+                    }
+                ]
             }
         ]
     },
     {
         "category": "roupas",
         "name": "Boné Aba Reta Nike Jordan Pro Jumpman - Strapback - Adulto",
+        "subcategory": "style",
         "rating": {
             "rating_stars": 3.0,
             "rating_amount": 5
         },
         "description": "Ostente suas habilidades com o boné snapback Jordan Pro Jumpman. Ele apresenta aba reta e uma coroa alta estruturada feita com ligamento de sarja. O icônico logotipo é bordado na frente em uma projeção ousada da herança da marca. Este produto é feito com, no mínimo, 50% de fibras de poliéster reciclado. Benefícios: A coroa estruturada de seis painéis é feita com ligamento de sarja. O design Jumpman bordado e espesso é elevado para criar profundidade. O fecho na parte de trás é ajustável. Detalhes do produto: Estrutura/face do painel frontal: 100% poliéster. Parte de trás do painel frontal: 80% poliéster e 20% algodão. Parte inferior da lingueta: 100% algodão.",
         "initial_price": 229.99,
-        "discounted_price": 140.29,
-        "imgs": [
-            "bone-aba-reta-nike-jordan-pro-jumpan-strapback-adulto-img1.avif",
-            "bone-aba-reta-nike-jordan-pro-jumpan-strapback-adulto-img2.avif"
-        ],
-        "color": "vermelho",
-        "sizes": [
+        "types": [
             {
-                "size": "ÚNICO",
-                "quantity": 42
+                "imgs": [
+                    "bone-aba-reta-nike-jordan-pro-jumpan-strapback-adulto-img1.avif",
+                    "bone-aba-reta-nike-jordan-pro-jumpan-strapback-adulto-img2.avif"
+                ],
+                "discount": 15,
+                "color": "vermelho",
+                "new": false,
+                "sizes": [
+                    {
+                        "size": "ÚNICO",
+                        "quantity": 42
+                    }
+                ]
             }
         ]
     },
     {
         "category": "roupas",
         "name": "Boné Aba Curva New Era MLB 940 Af Cotton Damage New York Yankees - Strapback - Adulto",
+        "subcategory": "style",
         "rating": {
             "rating_stars": 5.0,
             "rating_amount": 3
         },
         "description": "Conheça o Boné Aba Curva New Era MLB 940 Af Cotton Damage Neyyan - Strapback – Adulto! Diferenciado com efeito destroyed, esse Boné New Era Damage Neyyan é encorpado e resistente em algodão, possui faixa interna em tecido que ajuda na absorção do suor e o escudo do time bordado no painel frontal. Já o fecho por fivela permite um ajuste prático e personalizado. Estiloso e descolado, esse Boné Aba Curva New Era MLB 940 é a pedida certa para qualquer contexto urbano. Garanta já o seu e demonstre seu favoritismo pelo time dessa prestigiada liga. Compre já!",
         "initial_price": 199.99,
-        "discounted_price": 161.99,
-        "imgs": [
-            "bone-aba-curva-new-era-mlb-940-af-cotton-damage-new-york-yankees-strapback-adulto-img1.avif",
-            "bone-aba-curva-new-era-mlb-940-af-cotton-damage-new-york-yankees-strapback-adulto-img2.avif",
-            "bone-aba-curva-new-era-mlb-940-af-cotton-damage-new-york-yankees-strapback-adulto-img3.webp"
-        ],
-        "color": "preto",
-        "sizes": [
+        "types": [
             {
-                "size": "ÚNICO",
-                "quantity": 42
+                "imgs": [
+                    "bone-aba-curva-new-era-mlb-940-af-cotton-damage-new-york-yankees-strapback-adulto-img1.avif",
+                    "bone-aba-curva-new-era-mlb-940-af-cotton-damage-new-york-yankees-strapback-adulto-img2.avif",
+                    "bone-aba-curva-new-era-mlb-940-af-cotton-damage-new-york-yankees-strapback-adulto-img3.webp"
+                ],
+                "color": "preto",
+                "new": false,
+                "discount": 15,
+                "sizes": [
+                    {
+                        "size": "ÚNICO",
+                        "quantity": 42
+                    }
+                ]
             }
         ]
     },
     {
         "category": "roupas",
         "name": "Camiseta Whats Wear Lisa Dry Fit com Proteção Solar UV - Masculina",
+        "subcategory": "training",
         "rating": {
             "stars": 5.0,
             "amount": 2
@@ -652,6 +695,7 @@
             {
                 "color": "laranja",
                 "discount": 59,
+                "new": false,
                 "imgs": [
                     "camiseta-laranja-whats-wear-lisa-dry-fit-com-protecao-solar-uv-masculina-img1.avif",
                     "camiseta-laranja-whats-wear-lisa-dry-fit-com-protecao-solar-uv-masculina-img2.avif"
@@ -677,7 +721,8 @@
             },
             {
                 "color": "preto",
-                "discount": 59,
+                "new": false,
+                "discount": 64,
                 "imgs": [
                     "camiseta-preto-whats-wear-lisa-dry-fit-com-protecao-solar-uv-masculina-img1.avif",
                     "camiseta-preto-whats-wear-lisa-dry-fit-com-protecao-solar-uv-masculina-img2.webp"
@@ -704,6 +749,7 @@
             {
                 "color": "branco",
                 "discount": 59,
+                "new": false,
                 "imgs": [
                     "camiseta-branco-whats-wear-lisa-dry-fit-com-protecao-solar-uv-masculina-img1.avif",
                     "camiseta-branco-whats-wear-lisa-dry-fit-com-protecao-solar-uv-masculina-img2.webp"
@@ -729,7 +775,8 @@
             },
             {
                 "color": "azul claro",
-                "discount": 59,
+                "discount": 30,
+                "new": false,
                 "imgs": [
                     "camiseta-azulclaro-whats-wear-lisa-dry-fit-com-protecao-solar-uv-masculina-img1.avif",
                     "camiseta-azulclaro-whats-wear-lisa-dry-fit-com-protecao-solar-uv-masculina-img2.webp"
@@ -758,6 +805,7 @@
     {
         "category": "roupas",
         "name": "Meia Cano Médio ASICS Adulto Rally Crew",
+        "subcategory": "training",
         "rating": {
             "stars": 4.5,
             "amount": 3
@@ -767,6 +815,7 @@
         "types": [
             {
                 "color": "preto/cinza claro",
+                "new": false,
                 "discount": 20,
                 "imgs": [
                     "meia-cano-medio-asics-adulto-rally-crew-img1.avif",
@@ -784,6 +833,7 @@
     {
         "category": "roupas",
         "name": "Camiseta Térmica Rony com Proteção Solar UV 50+ Manga Longa - Feminina",
+        "subcategory": "training",
         "rating": {
             "stars": 3.8,
             "amount": 15
@@ -793,6 +843,7 @@
         "types": [
             {
                 "color": "preto",
+                "new": false,
                 "discount": 42,
                 "imgs": [
                     "camiseta-preto-termica-rony-com-protecao-solar-uv-50-manga-longa-feminina-img1.avif",
@@ -819,7 +870,8 @@
             },
             {
                 "color": "branco",
-                "discount": 42,
+                "new": false,
+                "discount": 40,
                 "imgs": [
                     "camiseta-branco-termica-rony-com-protecao-solar-uv-50-manga-longa-feminina-img1.avif",
                     "camiseta-branco-termica-rony-com-protecao-solar-uv-50-manga-longa-feminina-img2.avif"
@@ -845,7 +897,8 @@
             },
             {
                 "color": "cinza",
-                "discount": 42,
+                "new": false,
+                "discount": 30,
                 "imgs": [
                     "camiseta-cinza-termica-rony-com-protecao-solar-uv-50-manga-longa-feminina-img1.avif",
                     "camiseta-cinza-termica-rony-com-protecao-solar-uv-50-manga-longa-feminina-img2.avif"
@@ -871,7 +924,8 @@
             },
             {
                 "color": "azul",
-                "discount": 42,
+                "new": false,
+                "discount": 35,
                 "imgs": [
                     "camiseta-azul-termica-rony-com-protecao-solar-uv-50-manga-longa-feminina-img1.avif",
                     "camiseta-azul-termica-rony-com-protecao-solar-uv-50-manga-longa-feminina-img2.avif"
@@ -897,6 +951,7 @@
             },
             {
                 "color": "azul escuro",
+                "new": false,
                 "discount": 42,
                 "imgs": [
                     "camiseta-azulescuro-termica-rony-com-protecao-solar-uv-50-manga-longa-feminina-img1.avif",
@@ -925,6 +980,7 @@
     },
     {
         "category": "acessorios",
+        "subcategory": "basketball",
         "name": "Bola de Basquete Spalding Varsity Tf-150",
         "rating": {
             "rating_stars": 3.6,
@@ -935,6 +991,7 @@
         "types": [
             {
                 "color": "laranja",
+                "new": true,
                 "discount": 0,
                 "imgs": [
                     "bola-de-basquete-laranja-spalding-varsity-tf-150-img1.avif",
@@ -952,6 +1009,7 @@
     },
     {
         "category": "acessorios",
+        "subcategory": "basketball",
         "name": "Bola de Basquete Penalty Downtown + Bomba de Ar",
         "rating": {
             "rating_stars": 4.2,
@@ -962,7 +1020,8 @@
         "types": [
             {
                 "color": "preto",
-                "discount": 2,
+                "new": false,
+                "discount": 3,
                 "imgs": [
                     "bola-de-basquete-preta-penalty-downtown-bomba-de-ar-img1.avif",
                     "bola-de-basquete-preta-penalty-downtown-bomba-de-ar-img2.avif",
@@ -979,6 +1038,7 @@
     },
     {
         "category": "acessorios",
+        "subcategory": "training",
         "name": "Squeeze adidas Performance - 750ml",
         "rating": {
             "rating_stars": 4.5,
@@ -989,6 +1049,7 @@
         "types": [
             {
                 "color": "preto",
+                "new": false,
                 "discount": 0,
                 "imgs": [
                     "squeeze-preto-adidas-performance-750ml-img1.avif",
@@ -1004,6 +1065,7 @@
             },
             {
                 "color": "branco",
+                "new": true,
                 "discount": 0,
                 "imgs": [
                     "squeeze-branco-adidas-performance-750ml-img1.avif",
@@ -1020,6 +1082,7 @@
     },
     {
         "category": "acessorios",
+        "subcategory": "style",
         "name": "Mochila Speedo Swim II - 30 Litros",
         "rating": {
             "rating_stars": 3.8,
@@ -1030,7 +1093,8 @@
         "types": [
             {
                 "color": "azul",
-                "discount": 0,
+                "new": true,
+                "discount": 10,
                 "imgs": [
                     "mochila-azul-speedo-swim-ii-30-litros-img1.avif"
                 ],
@@ -1045,6 +1109,7 @@
     },
     {
         "category": "acessorios",
+        "subcategory": "training",
         "name": "Lancheira Térmica Polo One - 6 Litros",
         "rating": {
             "rating_stars": 4.0,
@@ -1055,6 +1120,7 @@
         "types": [
             {
                 "color": "preto",
+                "new": false,
                 "discount": 55,
                 "imgs": [
                     "lancheira-preto-termica-polo-one-6-litros-img1.avif",
@@ -1073,6 +1139,7 @@
     {
         "category": "acessorios",
         "name": "Luva de Boxe Muay Thai Troia Light",
+        "subcategory": "boxing",
         "rating": {
             "rating_stars": 3.5,
             "rating_amount": 102
@@ -1082,6 +1149,7 @@
         "types": [
             {
                 "color": "vermelho",
+                "new": true,
                 "discount": 0,
                 "imgs": [
                     "luva-vermelho-de-boxe-muay-thai-troia-light-img1.avif",
@@ -1111,6 +1179,7 @@
     },
     {
         "category": "acessorios",
+        "subcategory": "biking",
         "name": "Capacete para Bike Atrio MTB 2.0 - Adulto",
         "rating": {
             "rating_stars": 4.6,
@@ -1121,6 +1190,7 @@
         "types": [
             {
                 "color": "preto",
+                "new": false,
                 "discount": 40,
                 "imgs": [
                     "capacete-preto-para-bike-atrio-mtb-2-0-adulto-img1.avif",
@@ -1136,6 +1206,7 @@
             },
             {
                 "color": "cinza/preto",
+                "new": false,
                 "discount": 26,
                 "imgs": [
                     "capacete-cinza-para-bike-atrio-mtb-2-0-adulto-img.avif"
@@ -1155,6 +1226,7 @@
     },
     {
         "category": "equipamentos",
+        "subcategory": "biking",
         "name": "Bicicleta Aro 29 KRW S41 Alumínio - Câmbio Shimano - Freio a Disco hidráulico - 24V - Adulto",
         "rating": {
             "rating_stars": 3.9,
@@ -1165,6 +1237,7 @@
         "types": [
             {
                 "color": "preto/rosa",
+                "new": false,
                 "discount": 50,
                 "condition_price": 10,
                 "imgs": [
@@ -1180,7 +1253,8 @@
             },
             {
                 "color": "laranja/preto",
-                "discount": 50,
+                "new": false,
+                "discount": 40,
                 "condition_price": 10,
                 "imgs": [
                     "bicicleta-laranjapreto-aro-29-krw-s41-aluminio-cambio-shimano-freio-a-disco-hidraulico-24v-adulto-img.avif"
@@ -1208,6 +1282,7 @@
     },
     {
         "category": "equipamentos",
+        "subcategory": "skating",
         "name": "Patins Atrio Inline Regulável ES309 - 37 a 40 - Adulto",
         "rating": {
             "rating_stars": 4.2,
@@ -1218,7 +1293,8 @@
         "types": [
             {
                 "color": "preto",
-                "discount": 0,
+                "new": false,
+                "discount": 25,
                 "condition_price": 3,
                 "imgs": [
                     "patins-atrio-inline-regulavel-es309-37-a-40-adulto-img1.avif",
@@ -1236,6 +1312,7 @@
     },
     {
         "category": "equipamentos",
+        "subcategory": "general",
         "name": "Mesa de Pebolin Totó Winmax Dobrável Residencial",
         "rating": {
             "rating_stars": 3.1,
@@ -1246,6 +1323,7 @@
         "types": [
             {
                 "color": "marrom",
+                "new": true,
                 "discount": 0,
                 "condition_price": 10,
                 "imgs": [
@@ -1262,6 +1340,7 @@
     },
     {
         "category": "equipamentos",
+        "subcategory": "training",
         "name": "Esteira Elétrica Athletic Runner Bivolt",
         "rating": {
             "rating_stars": 3.6,
@@ -1272,6 +1351,7 @@
         "types": [
             {
                 "color": "nao se aplica",
+                "new": false,
                 "discount": 15,
                 "condition_price": 10,
                 "imgs": [
@@ -1289,6 +1369,7 @@
     },
     {
         "category": "equipamentos",
+        "subcategory": "biking",
         "name": "Bicicleta Caloi Ceci - Aro 24 - Freios V-Brake - Feminina - Infantil",
         "rating": {
             "rating_stars": 4.6,
@@ -1299,6 +1380,7 @@
         "types": [
             {
                 "color": "branco",
+                "new": false,
                 "discount": 23,
                 "condition_price": 10,
                 "imgs": [
@@ -1316,6 +1398,7 @@
     },
     {
         "category": "equipamentos",
+        "subcategory": "training",
         "name": "Par Halteres Emborrachado 2 Kg Kl Master Fitness Academia",
         "rating": {
             "rating_stars": 3.0,
@@ -1326,6 +1409,7 @@
         "types": [
             {
                 "color": "azul",
+                "new": false,
                 "discount": 50,
                 "condition_price": 5,
                 "imgs": [
@@ -1343,6 +1427,7 @@
     },
     {
         "category": "equipamentos",
+        "subcategory": "training",
         "name": "Halter Bola Anilhas&Cia Pintado - 5Kg - Par",
         "rating": {
             "rating_stars": 4.0,
@@ -1353,6 +1438,7 @@
         "types": [
             {
                 "color": "preto",
+                "new": false,
                 "discount": 0,
                 "condition_price": 3,
                 "imgs": [
@@ -1369,6 +1455,7 @@
     },
     {
         "category": "equipamentos",
+        "subcategory": "biking",
         "name": "Bicicleta Spinning Kikos Max-KS5",
         "rating": {
             "rating_stars": 3.0,
@@ -1379,6 +1466,7 @@
         "types": [
             {
                 "color": "preto",
+                "new": false,
                 "discount": 0,
                 "condition_price": 10,
                 "imgs": [
@@ -1395,6 +1483,7 @@
     },
     {
         "category": "equipamentos",
+        "subcategory": "boxing",
         "name": "Saco de Pancada Profissional Gorilla - 180x100cm",
         "rating": {
             "rating_stars": 5.0,
@@ -1402,15 +1491,16 @@
         },
         "description": "Com 180 cm de altura por 100 cm de circunferência. O tamanho total do saco de pancadas contando desde o fundo do produto até o término da alça fica em aproximadamente 195 cm de altura.)\nConfeccionado em lona sintética de alta resistência, mantendo a forma mesmo depois de intermináveis rodadas de treinamento. Pode bater a vontade pois a lona não desgasta com chutes e socos! O produto possui quatro pontas de apoio acompanhadas com argolas, correntes e um exclusivo sistema de mosquetão, pronto para pendurá-lo! Zíper na boca para facilitar o enchimento!",
         "initial_price": 179.98,
-        "type": {
-            "type1": {
-                "imgs": {
-                    "img1": "saco-de-pancada-profissional-gorilla-180x100cm-img1.avif",
-                    "img2": "saco-de-pancada-profissional-gorilla-180x100cm-img2.avif"
-                },
-                "descount": 0,
-                "condition_price": 2,
+        "types": [
+            {
                 "color": "preto",
+                "new": true,
+                "discount": 0,
+                "condition_price": 2,
+                "imgs": [
+                    "saco-de-pancada-profissional-gorilla-180x100cm-img1.avif",
+                    "saco-de-pancada-profissional-gorilla-180x100cm-img2.avif"
+                ],
                 "sizes": [
                     {
                         "size": "ÚNICO",
@@ -1418,10 +1508,11 @@
                     }
                 ]
             }
-        }
+        ]
     },
     {
         "category": "equipamentos",
+        "subcategory": "biking",
         "name": "Bicicleta GTSM1 Ride GTS - Aro 29 - Freio a Disco - Câmbio GTSM1 TSI - 24 Marchas e Amortecedor - Feminina",
         "rating": {
             "rating_stars": 5.0,
@@ -1429,15 +1520,16 @@
         },
         "description": "Bicicleta Ride Feminina é ideal para mulheres que querem começar a pedalar, fazer muitos passeios e utilizar no dia-a-dia. São 2 tipos de tamanhos de quadro e cores para você escolher, o peso total da bike é de 15kg montada. A Bike é direta da Fábrica Oficial com mais de 28 anos no mercado e garantia exclusiva com suporte diferenciado. A Bicicleta Suporta uma pessoa de até 100kgs.O sistema de marchas da bicicleta é um dos mais importantes componentes, é como se fosse o ?coração? da sua bike. Os câmbios GTSM1 MX8 tem alta durabilidade e qualidade de sobra, ajudando você a ter alta performance em sua bike.",
         "initial_price": 1999.00,
-        "type": {
-            "type1": {
-                "imgs": {
-                    "img1": "bicicleta-rosa-gtsm1-ride-gts-aro-29-freio-a-disco-cambio-gtsm1-tsi-24-marchas-e-amortecedor-feminina-img1.avif",
-                    "img2": "bicicleta-rosa-gtsm1-ride-gts-aro-29-freio-a-disco-cambio-gtsm1-tsi-24-marchas-e-amortecedor-feminina-img2.avif"
-                },
-                "descount": 45,
-                "condition_price": 10,
+        "types": [
+            {
                 "color": "rosa",
+                "new": false,
+                "discount": 45,
+                "condition_price": 10,
+                "imgs": [
+                    "bicicleta-rosa-gtsm1-ride-gts-aro-29-freio-a-disco-cambio-gtsm1-tsi-24-marchas-e-amortecedor-feminina-img1.avif",
+                    "bicicleta-rosa-gtsm1-ride-gts-aro-29-freio-a-disco-cambio-gtsm1-tsi-24-marchas-e-amortecedor-feminina-img2.avif"
+                ],
                 "sizes": [
                     {
                         "size": 15,
@@ -1449,13 +1541,14 @@
                     }
                 ]
             },
-            "type2": {
-                "imgs": {
-                    "img1": "bicicleta-branca-gtsm1-ride-gts-aro-29-freio-a-disco-cambio-gtsm1-tsi-24-marchas-e-amortecedor-feminina-img.avif"
-                },
-                "descount": 45,
-                "condition_price": 10,
+            {
                 "color": "branco",
+                "new": false,
+                "discount": 45,
+                "condition_price": 10,
+                "imgs": [
+                    "bicicleta-branca-gtsm1-ride-gts-aro-29-freio-a-disco-cambio-gtsm1-tsi-24-marchas-e-amortecedor-feminina-img.avif"
+                ],
                 "sizes": [
                     {
                         "size": 15,
@@ -1467,6 +1560,6 @@
                     }
                 ]
             }
-        }
+        ]
     }
 ]

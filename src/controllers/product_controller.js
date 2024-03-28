@@ -8,12 +8,12 @@ const ProductController = {
     getProductData: async (req, res) => {
         try {
 
-            const productsData = await Products.find();
-            const categoriesData = await Categories.find();
+            const products = await Products.find();
+            const categories = await Categories.find();
 
-            if(!productsData || !categoriesData) return HandleError(res, 404, "Dados não encontrados");
+            if(!products || !categories) return HandleError(res, 404, "Dados não encontrados");
             
-            return HandleSuccess(res, 200, "Dados dos produtos encontrados com sucesso", {productsData, categoriesData})
+            return HandleSuccess(res, 200, "Dados dos produtos encontrados com sucesso", {products, categories})
         } catch (err) {
             console.error(`Houve um erro ao enviar os produtos: ${err}`);
             return HandleError(res, 500, "Falha em buscar produtos");

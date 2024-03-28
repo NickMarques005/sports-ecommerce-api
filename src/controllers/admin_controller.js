@@ -1,6 +1,10 @@
+const { default: mongoose } = require('mongoose');
 const Admin = require('../models/admin');
 const { HandleError, HandleSuccess } = require('../utils/handle_response');
 const { SignToken } = require('../utils/handle_token');
+const fs = require('fs');
+const path = require('path');
+const collectionModels = require('../utils/collections');
 
 const AdminController = {
     createAdmin: async (req, res) => {
@@ -54,17 +58,38 @@ const AdminController = {
             return HandleError(res, 500, "Falha ao logar como admin");
         }
     },
-    updateAllProducts: async (req, res) => {
+    addNewItemsViaJSON: async (req, res) => {
         try {
-            const collection = await getCollection();
+            const { archive, collectionToAdd } = req.body;
 
-            const updateResult = await collection.updateMany({}, { $set: { subcategory: "" } });
+            if(!archive || !collectionToAdd) return HandleError(res, 400, "Preencha os campos corretamente para poder adicionar os itens");
 
-            if (!updateResult) return HandleError(res, 400, "Houve um erro ao atualizar produtos");
+            const forbiddenCollections = ['forms_data', 'admin_data'];
+            if(forbiddenCollections.includes(collectionToAdd)) return HandleError(res, 400, "Coleção não permitida");
 
-            const updateMessage = `${updateResult.modifiedCount} updated documents`;
+            if(!collectionModels[collectionToAdd]) return HandleError(res, 400, "Coleção não existe no banco de dados ou não é permitida para alterações");
+            
+            const filePath = path.join(__dirname, '..', 'data_example', archive);
 
-            return HandleSuccess(res, 200, updateMessage);
+            if(!fs.existsSync(filePath)) return HandleError(res, 404, "Archive JSON não encontrado");
+
+            const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+            const Model = collectionModels[collectionToAdd];
+
+            let addedItems = [];
+
+            for(const item of data)
+            {
+                const itemExists = await Model.findOne({ name: item.name});
+
+                if(!itemExists){
+                    const newItem = await new Model(item);
+                    await newItem.save();
+                    addedItems.push(newItem);
+                }
+            }
+
+            return HandleSuccess(res, 200, `${addedItems.length} itens foram adicionados à coleção ${collectionToAdd}`, {addedItems});
         } catch (err) {
             console.error(`Houve um erro na atualização de produtos: ${err}`);
             return HandleError(res, 500, "Falha na atualização dos produtos no banco de dados");

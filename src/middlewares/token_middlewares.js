@@ -8,7 +8,7 @@ const verifyToken = (req, res, next) => {
 
     if(!authHeader)
     {
-        HandleError(res, 401, "Usuário não autorizado");
+        return HandleError(res, 401, "Usuário não autorizado");
     }
 
     const token = authHeader.split(' ')[1];

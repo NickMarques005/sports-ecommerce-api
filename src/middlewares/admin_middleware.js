@@ -41,13 +41,14 @@ const validateAdmin = async (req, res, next) => {
         const authHeader = req.headers.authorization;
 
         if (!authHeader) {
-            HandleError(res, 401, "Usuário não autorizado");
+            return HandleError(res, 401, "Usuário não autorizado");
         }
 
         const token = authHeader.split(' ')[1];
+
         const decodedToken = TokenVerification(token);
         
-        const admin = await Admin.findById(decodedToken.user.id);
+        const admin = await Admin.findById(decodedToken.admin.id);
 
         if(!admin || !admin.isAdmin) return HandleError(res, 403, "Acesso negado. Requer privilégios de administrador");
 

@@ -73,6 +73,16 @@ const AuthController = {
             return HandleError(res, 500, `Falha ao buscar dados de usuário`);
         }
     },
+
+    successfulTokenValidation: async (req, res) => {
+        try{
+            return HandleSuccess(res, 200, "Usuário autorizado");
+        }
+        catch (err)
+        {
+            return HandleError(res, 500, `Falha ao validar token`);
+        }
+    }
 }
 
 module.exports = AuthController;

@@ -79,7 +79,7 @@ const ProductController = {
             console.error(`Houve um erro ao buscar produto: ${err}`);
             return HandleError(res, 500, "Falha ao buscar produto");
         }
-    },
+    }
 }
 
 module.exports = ProductController;

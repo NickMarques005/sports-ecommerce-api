@@ -8,5 +8,6 @@ AuthRouter.post('/create', validateCreateUser, AuthController.createUser);
 AuthRouter.post('/login', validateLoginUser, AuthController.loginUser);
 AuthRouter.get('/data', verifyToken, AuthController.getUserData);
 AuthRouter.post('/verify-token', verifyToken, AuthController.successfulTokenValidation);
+AuthRouter.post('/purchase-items', verifyToken, AuthController.purchaseItems);
 
 module.exports = AuthRouter;

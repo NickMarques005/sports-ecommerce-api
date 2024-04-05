@@ -2,6 +2,7 @@
 
 //Dotenv
 const dotenv = require('dotenv').config();
+const stripe = require('stripe')(process.env.STRIPE_SECRET);
 
 //Middleware Express / Cors 
 const express = require('express');

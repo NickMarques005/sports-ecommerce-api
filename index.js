@@ -16,6 +16,8 @@ const port = process.env.PORT || 3000;
 const database = require("./src/database/database");
 const getCollection = require("./src/database/mongo_connection");
 const MainRouter = require('./src/routes/main_router');
+const StripeRouter = require('./src/routes/stripe_route');
+
 //Importing Database to index.js
 database();
 
@@ -29,6 +31,8 @@ app.use(cors(corsOptions));
 app.get('/', (req, res) => {
     res.send('Sports E-Commerce API Server');    //Send message reply to Frontend
 });
+
+app.use('/api/stripe', StripeRouter);
 
 app.use(express.json());
 

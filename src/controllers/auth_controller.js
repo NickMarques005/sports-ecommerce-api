@@ -86,31 +86,64 @@ const AuthController = {
     },
     purchaseItems: async (req, res) => {
         try {
-            const { items, userId } = req.body;
-            
-            if (!userId) return HandleError(res, 401, `Usuário não encontrado`);
+            const { items, userId, identityData } = req.body;
+
+            if (!userId || !identityData) return HandleError(res, 401, `Usuário não encontrado`);
 
             console.log("Items to purchase: ", items);
 
             if (!items) return HandleError(res, 404, "Nenhum item encontrado");
 
-            const itemsToPurschase = items.map(item => ({
-                price_data: {
-                    currency: "brl",
-                    product_data: {
-                        name: item.name,
-                        images: [item.image]
+            const itemsToOrder = items.map(item => {
+                const price = parseFloat(item.price.replace(',', '.'));
+        
+                if (isNaN(price)) {
+                    throw new Error(`Preço inválido para o item ${item.name}`);
+                }
+
+                return ({
+                    ...item,
+                    price: price
+                });
+            })
+
+            const itemsToPurchase = items.map(item => {
+                const price = parseFloat(item.price.replace(',', '.'));
+        
+                if (isNaN(price)) {
+                    throw new Error(`Preço inválido para o item ${item.name}`);
+                }
+
+                return ({
+                    price_data: {
+                        currency: "brl",
+                        product_data: {
+                            name: item.name,
+                            images: [item.image]
+                        },
+                        unit_amount: price * 100,
                     },
-                    unit_amount: Math.round(parseFloat(item.price) * 100),
-                },
-                quantity: item.quantity
-            }));
+                    quantity: item.quantity
+                });
+            }
+            );
+
+            console.log("ITEMS TO ORDER: ", itemsToOrder);
 
             const stripe = Stripe(process.env.STRIPE_SECRET);
 
+            const customer = await stripe.customers.create({
+                metadata: {
+                    owner: userId,
+                    products: JSON.stringify(itemsToOrder),
+                    identityData: JSON.stringify(identityData)
+                }
+            });
+
             const checkoutSession = await stripe.checkout.sessions.create({
                 payment_method_types: ['card'],
-                line_items: itemsToPurschase,
+                customer: customer.id,
+                line_items: itemsToPurchase,
                 mode: 'payment',
                 success_url: `${process.env.FRONTEND_URL}/success-purchase`,
                 cancel_url: `${process.env.FRONTEND_URL}/cancel-purchase`
@@ -127,42 +160,19 @@ const AuthController = {
             return HandleError(res, 500, `Falha ao comprar produtos`);
         }
     },
-    createOrder: async (req, res) => {
-        try {
-            const { userId, items, identityData  } = req.body;
-            if (!userId || !items || !identityData) return HandleError(res, 401, `Dados incompletos para criar o pedido.`);
-
-            console.log("Criação de Pedido...");
-
-            const newOrder = new Order({
-                owner: userId,
-                products: items,
-                identityData: identityData
-            });
-            
-            await newOrder.save();
-
-            return HandleSuccess(res, 200, "Pedido criado com sucesso");
-
-        } 
-        catch (err) {
-            console.log("Erro ao criar pedido: ", err);
-            return HandleError(res, 500, `Falha ao criar pedido`);
-        }
-    },
     getOrders: async (req, res) => {
         try {
             const { userId } = req.body;
 
             if (!userId) return HandleError(res, 401, `Id de usuário não encontrado`);
-            
+
             console.log(`Buscando pedidos pedidos de usuário ${userId} ...`);
 
-            const orders = await Order.find({owner: userId});
-            if(!orders) return HandleError(res, 404, "Nenhum pedido feito pelo usuário foi encontrado");
+            const orders = await Order.find({ owner: userId });
+            if (!orders) return HandleError(res, 404, "Nenhum pedido feito pelo usuário foi encontrado");
 
             return HandleSuccess(res, 200, "Pedidos encontrados com sucesso.", orders);
-        } 
+        }
         catch (err) {
             console.log("Erro ao buscar pedidos: ", err);
             return HandleError(res, 500, `Falha ao buscar pedidos`);

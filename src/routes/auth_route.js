@@ -9,7 +9,6 @@ AuthRouter.post('/login', validateLoginUser, AuthController.loginUser);
 AuthRouter.get('/data', verifyToken, AuthController.getUserData);
 AuthRouter.post('/verify-token', verifyToken, AuthController.successfulTokenValidation);
 AuthRouter.post('/purchase-items', verifyToken, AuthController.purchaseItems);
-AuthRouter.post('/create-purchase-order', verifyToken, AuthController.createOrder)
 AuthRouter.get('/get-purchase-orders', verifyToken, AuthController.getOrders);
 
 module.exports = AuthRouter;

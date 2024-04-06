@@ -26,7 +26,7 @@ const cepSchema = new Schema({
         type: String,
         required: true
     },
-});
+}, { _id: false });
 
 const itemSchema = new Schema({
     id: {
@@ -72,7 +72,7 @@ const identitySchema = new Schema({
         type: cepSchema,
         required: true
     }
-});
+}, { _id: false });
 
 const orderSchema = new Schema({
     owner: {

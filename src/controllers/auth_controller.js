@@ -108,7 +108,7 @@ const AuthController = {
             })
 
             const itemsToPurchase = items.map(item => {
-                const price = parseFloat(item.price.replace(',', '.'));
+                let price = parseFloat(item.price.replace(',', '.'));
         
                 if (isNaN(price)) {
                     throw new Error(`Preço inválido para o item ${item.name}`);
@@ -121,7 +121,7 @@ const AuthController = {
                             name: item.name,
                             images: [item.image]
                         },
-                        unit_amount: price * 100,
+                        unit_amount: Math.round(price * 100),
                     },
                     quantity: item.quantity
                 });

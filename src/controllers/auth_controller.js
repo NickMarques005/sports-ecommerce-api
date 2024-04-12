@@ -102,10 +102,11 @@ const AuthController = {
                 }
 
                 return ({
-                    ...item,
+                    id: item.id,
+                    quantity: item.quantity,
                     price: price
                 });
-            })
+            });
 
             const itemsToPurchase = items.map(item => {
                 let price = parseFloat(item.price.replace(',', '.'));
@@ -166,7 +167,7 @@ const AuthController = {
 
             if (!userId) return HandleError(res, 401, `Id de usuário não encontrado`);
 
-            console.log(`Buscando pedidos pedidos de usuário ${userId} ...`);
+            console.log(`Buscando pedidos de usuário ${userId} ...`);
 
             const orders = await Order.find({ owner: userId });
             if (!orders) return HandleError(res, 404, "Nenhum pedido feito pelo usuário foi encontrado");

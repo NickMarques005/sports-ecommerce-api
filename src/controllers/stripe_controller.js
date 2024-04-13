@@ -6,10 +6,16 @@ const Order = require('../models/order');
 const StripeController = {
     HandleWebhooks: async (req, res) => {
         const sig = req.headers['stripe-signature'];
+        console.log("Endpoint Secret: ", endpointSecret);
 
         let data;
         let eventType;
         let event;
+
+        console.log("Raw Body: ", req.body);
+        console.log("Signature: ", sig);
+        console.log("Endpoint Secret: ", endpointSecret);
+        console.log("Stripe Secret: ", process.env.STRIPE_SECRET);
 
         try {
             event = stripe.webhooks.constructEvent(req.body, sig, endpointSecret);
@@ -25,17 +31,17 @@ const StripeController = {
 
         switch (eventType) {
             case "checkout.session.completed":
-                stripe.customers.retrieve(data.customer).then( async (customer) => {
+                stripe.customers.retrieve(data.customer).then(async (customer) => {
                     console.log(customer);
 
                     const orderData = customer.metadata;
-                    
+
                     const orderRetrieved = {
                         owner: orderData.owner,
                         identityData: JSON.parse(orderData.identityData),
                         products: JSON.parse(orderData.products)
                     }
-                    
+
                     console.log("New Order: ", orderRetrieved);
 
                     const newOrder = new Order({
@@ -43,7 +49,7 @@ const StripeController = {
                         products: orderRetrieved.products,
                         identityData: orderRetrieved.identityData
                     });
-        
+
                     await newOrder.save();
 
                     return HandleSuccess(res, 200, "Pedido executado com sucesso");

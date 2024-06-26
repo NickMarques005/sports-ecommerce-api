@@ -1,18 +1,15 @@
 //---index.js---//
 
-//Dotenv
 const dotenv = require('dotenv').config();
 const stripe = require('stripe')(process.env.STRIPE_SECRET);
 
-//Middleware Express / Cors 
 const express = require('express');
 const cors = require('cors');
 const app = express();
 
 app.use(cors());
-//Port Number for the server
 const port = process.env.PORT || 3000;
-//Requiring Database Functionalitys
+
 const database = require("./src/database/database");
 const getCollection = require("./src/database/mongo_connection");
 const MainRouter = require('./src/routes/main_router');

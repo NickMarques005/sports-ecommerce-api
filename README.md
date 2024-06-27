@@ -27,7 +27,7 @@ Sports E-Commerce API is the backend part of the Sports project, an e-commerce a
 ### Step by Step
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/sports-ecommerce-api.git
+    git clone https://github.com/NickMarques005/sports-ecommerce-api.git
     ```
 2. Navigate to the project directory:
     ```bash
